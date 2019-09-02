@@ -5,13 +5,13 @@ sudo apt -y upgrade
 sudo apt -y dist-upgrade
 sudo rpi-update
 echo "Instalando Librerias"
-sudo apt install libgtk-3-dev libcanberra-gtk3-dev
-sudo apt install libtiff-dev zlib1g-dev
-sudo apt install libjpeg-dev libpng-dev
-sudo apt install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
-sudo apt-get install libxvidcore-dev libx264-dev
-sudo apt install python3-numpy
-sudo apt install python-numpy
+sudo apt -y install libgtk-3-dev libcanberra-gtk3-dev
+sudo apt -y install libtiff-dev zlib1g-dev
+sudo apt -y install libjpeg-dev libpng-dev
+sudo apt -y install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+sudo apt-get -y install libxvidcore-dev libx264-dev
+sudo apt -y install python3-numpy
+sudo apt -y install python-numpy
 echo "Extrayendo opencv-4.1.0-pizero.tar.bz2"
 tar xfv opencv-4.1.0-pizero.tar.bz2
 sudo mv opencv-4.1.0 /opt
